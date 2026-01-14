@@ -9,9 +9,9 @@
     font-style: normal;
 }
 
-body {
-    /* background-color: rgb(219, 169, 149); */
-}
+/* body {
+     background-color: rgb(219, 169, 149); 
+} */
 
 .display-flex {
     display: flex;
@@ -100,6 +100,61 @@ main>section {
     margin-top: 130px;
 }
 
+
+/* feature section related style  */
+.feature {
+    gap: 100px;
+}
+
+.feature-title {
+    border-left: 5px solid #ff900e;
+    padding-left: 21px;
+}
+
+.individual-list {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+
+}
+
+/* big button */
+#experience-badge {
+    padding: 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#experience-years {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.feature-architect img {
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .teams {
     align-items: center;
 
@@ -110,6 +165,14 @@ main>section {
     gap: 24px;
 }
 
+
+
+
+
+
+
+
+
 .feature-title {
     font-size: 2.5rem;
 
@@ -118,6 +181,7 @@ main>section {
 .our-features {
     margin-left: 130px;
     max-width: 530px;
+    align-items: center;
 }
 
 .quick-list {
@@ -186,17 +250,37 @@ main>section {
     display: none;
 }
 
+footer {
+    background-color: #Fff4e7;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+
+
+
 @media screen and (max-width:576px) {
 
     .navbar,
     .nav-links,
-    .teams {
+    .teams .feature {
         flex-direction: column;
     }
 
-    .eam-image-container {
+    .team-image-container {
         grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        justify-content: center;
+
+
     }
+
+
 
     .our-features {
         margin-left: 20px;
@@ -210,7 +294,7 @@ main>section {
 
     .facts-container {
         grid-template-columns: repeat(1, 1fr);
-        
+
     }
 
     .sponsor-company {
@@ -219,10 +303,19 @@ main>section {
         gap: 30px;
         justify-items: center;
     }
+
+    .quick-list {
+        flex-direction: column;
+
+
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams {
+
+    .teams,
+    .feature {
+        /*meyer chobi niche namche responsive e */
         flex-direction: column;
     }
 
@@ -231,16 +324,36 @@ main>section {
         margin: 50px auto;
         text-align: center;
     }
- .facts-container {
+
+    .facts-container {
         grid-template-columns: repeat(2, 1fr);
-        
+        gap: 50px;
+        justify-items: center;
+
     }
 
     .sponsor-company {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        
+
+
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .quick-list {
+        flex-direction: column;
+
+    }
+
+    .team-image-container {
+        display: grid;
+        justify-content: center;
+
 
     }
 }
